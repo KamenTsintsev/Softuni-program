@@ -1,0 +1,49 @@
+@media screen and (max-width:600px) {
+    body {
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main .left-to-right:first-child {
+        height: 570px;
+        padding: 50px;
+    }
+
+    main .left-to-right article {
+        padding: 30px;
+        width: 425px;
+        height: 425px;
+        border-radius: 100px;
+    }
+
+    main .left-to-right article button, main section:nth-child(2) button {
+        display: none;
+    }
+
+    main section:nth-child(2), main section:nth-child(4) {
+        flex-direction: column;
+    }
+
+    main section:nth-child(4) article {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    main section:nth-child(4) form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    label:not(label:last-child) {
+        width: 60%;
+    }
+
+    main section:nth-child(4) article form input, main section:nth-child(4) article form textarea {
+        width: 100%;
+    }
+}

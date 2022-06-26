@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+/* li #102955 */
+/* h  #191D34 */
+/* p  #909090 */
+/* bt #ff3600 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main, img {
+    max-width: 100%;
+}
+
+section, footer {
+    width: 70%;
+    margin-top: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #909090;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #102955;
+}
+
+button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #ff3600;
+    font-weight: 700;
+}
+
+button.orange {
+    background-color: #ff3600;
+    color: #ffffff;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+header nav ul {
+    display: flex;
+    font-weight: 600;
+}
+
+li {
+    padding: 0 15px;
+}
+
+.home {
+    height: 710px;
+    width: 100%;
+    margin: 0;
+}
+
+.home .bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.home div image {
+    max-width: 70%;
+}
+
+.home article {
+    color: white;
+    display: inline-block;
+    inline-size: 400px;
+    margin-left: 15%;
+    padding-top: 15%;
+}
+
+.home article h1 {
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.home article h1 span {
+    font-weight: 800;
+}
+
+.home article p {
+    margin: 7% 0;
+    color: white;
+}
+
+.home .dog {
+    display: inline-block;
+    position: absolute;
+    height: 700px;
+    margin-top: 6%;
+    left: 30%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services p {
+    inline-size: 600px;
+}
+
+.services .articles {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.services .articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ff3600;
+    border-radius: 10px;
+    width: 330px;
+    height: fit-content;
+}
+
+.services .articles article p {
+    inline-size: 250px;
+    margin: 20px 0 45px;
+}
+
+.services .articles article .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 65px;
+}
+
+.services .articles article .img .bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about div {
+    width: 40%;
+}
+
+.about div h2 {
+    font-weight: 400;
+}
+
+.about div h2 span {
+    font-weight: 800;
+}
+
+.about div p {
+    margin: 30px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 482px;
+    color: white;
+}
+
+.contact .bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact p {
+    color: white;
+    inline-size: 600px;
+    font-size: 22px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+.contact div button, .contact div p {
+    display: inline;
+
+}
+
+.contact div p span {
+    margin: 0 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+footer article {
+    width: 300px;
+}
+
+footer article p {
+    line-height: 2.5;
+}

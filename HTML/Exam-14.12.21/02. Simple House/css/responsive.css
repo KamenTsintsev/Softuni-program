@@ -1,0 +1,20 @@
+/* TODO: Add the responsive styles here */
+@media(max-width: 600px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    main header .tm-section-title {
+        margin: 30px auto;
+    }
+
+    main div.tm-gallery {
+        margin: 0;
+    }
+
+    main .tm-gallery-page {
+        margin: 0 auto;
+        justify-content: center;
+    }
+}

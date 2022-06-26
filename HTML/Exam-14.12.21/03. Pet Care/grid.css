@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+/* li #102955 */
+/* h  #191D34 */
+/* p  #909090 */
+/* bt #ff3600 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+}
+
+/* BODY AND GENERAL */
+/* ---------------------------------------------------------------- */
+
+body {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". header"
+        ". main"
+        ". footer"
+    ;
+}
+
+header, main, footer {
+    justify-self: center;
+}
+
+section {
+    margin-top: 20%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+p {
+    color: #909090;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #102955;
+}
+
+button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #ff3600;
+    font-weight: 700;
+}
+
+button.orange {
+    background-color: #ff3600;
+    color: #ffffff;
+}
+
+
+.home .bg, .contact .bg {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* HEADER */
+/* ---------------------------------------------------------------- */
+
+header {
+    grid-area: header;
+    width: 100%;
+    margin: 2% 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/* MAIN AND SECTIONS */
+/* ---------------------------------------------------------------- */
+
+main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "home""services"
+        "about"
+        "contact"
+    ;
+}
+
+/* HOME SECTION */
+/* ---------------------------------------------------------------- */
+
+.home {
+    grid-area: home;
+    display: flex;
+    height: 710px;
+    margin: 0;
+}
+
+.home .content {
+    color: white;
+    margin-top: 15%;
+    width: 360px;
+}
+
+.home .content h1 {
+    font-weight: 100;
+}
+
+.home .content h1 span {
+    font-weight: 800;
+}
+
+.home .content p {
+    color: white;
+    margin: 30px 0;
+}
+
+.home .dog {
+    position: absolute;
+    margin: 60px 0 0 135px;
+}
+
+/* SERVICES SECTION */
+/* ---------------------------------------------------------------- */
+
+.services {
+    grid-area: services;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services .header {
+    width: 55%;
+    margin-bottom: 80px;
+}
+
+.services .articles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.services .articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ff3600;
+    border-radius: 6px;
+    max-width: 300px;
+    padding: 40px 20px;
+}
+
+.services .articles article .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .articles article .img .bg {
+    margin: 10px;
+}
+
+.services .articles article .img .front {
+    position: absolute;
+}
+
+/* ABOUT SECTION */
+/* ---------------------------------------------------------------- */
+
+
+.about {
+    grid-area: about;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about div {
+    width: 40%;
+}
+
+.about div h2 {
+    font-weight: 400;
+}
+
+.about div h2 span {
+    font-weight: 800;
+}
+
+.about div p {
+    margin: 50px 0;
+}
+
+/* CONTACT SECTION */
+/* ---------------------------------------------------------------- */
+
+
+.contact {
+    grid-area: contact;
+    height: 490px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact p {
+    color: white;
+    font-size: 20px;
+    max-width: 550px;
+    margin: 30px 0;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+}
+
+.contact div p {
+    margin: 0;
+}
+
+.contact div span {
+    margin: 0 15px;
+}
+
+/* FOOTER */
+/* ---------------------------------------------------------------- */
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 8% 0;
+}
+
+footer p {
+    line-height: 2;
+    max-width: 250px;
+}
